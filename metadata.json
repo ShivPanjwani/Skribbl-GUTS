@@ -1,0 +1,5 @@
+{
+  "name": "DrawIt",
+  "description": "A multiplayer-style drawing and guessing game powered by Gemini. Play against AI bots in 3 rounds of creative chaos. Features real-time AI vision for guessing and image generation for drawing tasks.",
+  "requestFramePermissions": []
+}
