@@ -168,9 +168,7 @@ export const checkGuess = (roomCode, guess) => {
   const normalizedGuess = guess.trim().toLowerCase();
   const normalizedTarget = state.currentWord.word.toLowerCase();
   
-  return normalizedGuess === normalizedTarget || 
-         normalizedGuess.includes(normalizedTarget) || 
-         normalizedTarget.includes(normalizedGuess);
+  return normalizedGuess === normalizedTarget;
 };
 
 // Handle correct guess

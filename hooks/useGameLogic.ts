@@ -323,7 +323,7 @@ export const useGameLogic = () => {
     const normalizedGuess = text.trim().toLowerCase();
     const normalizedTarget = targetWord.toLowerCase();
     
-    const isCorrect = normalizedGuess === normalizedTarget || normalizedGuess.includes(normalizedTarget) || normalizedTarget.includes(normalizedGuess);
+    const isCorrect = normalizedGuess === normalizedTarget;
     
     if (isCorrect) {
       handleCorrectGuess('user');
