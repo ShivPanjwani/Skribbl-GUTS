@@ -695,7 +695,11 @@ const App: React.FC = () => {
                 ) : (
                   <div className="text-violet-300 animate-pulse flex flex-col items-center">
                     <Pencil size={32} className="md:w-12 md:h-12 mb-2"/>
-                    <p className="font-bold text-sm md:text-base">Waiting for drawing...</p>
+                    <p className="font-bold text-sm md:text-base">
+                      {phase === GamePhase.WORD_SELECTION 
+                        ? `${currentPlayer?.name} is picking a word...`
+                        : 'Waiting for drawing...'}
+                    </p>
                   </div>
                 )}
               </div>
