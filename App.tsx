@@ -858,7 +858,7 @@ const App: React.FC = () => {
       {renderConnectionStatus()}
       {renderHeader()}
       
-      {phase === GamePhase.WORD_SELECTION && wordOptions.length > 0 && renderWordSelection()}
+      {phase === GamePhase.WORD_SELECTION && wordOptions.length > 0 && isMyTurn && renderWordSelection()}
       
       {(phase === GamePhase.DRAWING || 
         phase === GamePhase.TURN_START || 

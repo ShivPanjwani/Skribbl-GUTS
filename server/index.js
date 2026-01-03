@@ -96,7 +96,7 @@ const broadcastRoomState = (roomCode) => {
         totalRounds: gameState.totalRounds,
         currentPlayerIndex: gameState.currentPlayerIndex,
         currentWord: gameState.currentWord,
-        wordOptions: gameState.wordOptions,
+        // wordOptions intentionally NOT included - sent only to drawer via 'word-options' event
         timeLeft: gameState.timeLeft,
         messages: gameState.messages,
         canvasData: gameState.canvasData
