@@ -862,7 +862,8 @@ const App: React.FC = () => {
       
       {(phase === GamePhase.DRAWING || 
         phase === GamePhase.TURN_START || 
-        phase === GamePhase.ROUND_START) && renderGameScreen()}
+        phase === GamePhase.ROUND_START ||
+        (phase === GamePhase.WORD_SELECTION && !isMyTurn)) && renderGameScreen()}
     </div>
   );
 };
